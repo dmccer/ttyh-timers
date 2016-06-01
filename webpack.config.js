@@ -28,7 +28,7 @@ module.exports = {
     index: './src/index.js'
   },
   output: {
-    library: 'TMask',
+    library: 'TTimers',
     libraryTarget: 'umd',
     path: path.join(__dirname, pkg.dest),
     filename: '[name].js'

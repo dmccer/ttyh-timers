@@ -1,8 +1,8 @@
 {
   "name": "ttyh-timers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ttyh react timers",
-  "main": "webpack.config.js",
+  "main": "dist/index.js",
   "dest": "dist",
   "scripts": {
     "clean": "rimraf dist",

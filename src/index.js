@@ -53,6 +53,7 @@ const TTimers = CComponent => class extends Component {
         setInterval={this.setInterval.bind(this)}
         clearTimeout={this.clearTimeout.bind(this)}
         clearInterval={this.clearInterval.bind(this)}
+        ...this.props
       />
     );
   }

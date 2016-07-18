@@ -35,15 +35,23 @@ const TTimers = CComponent => class extends Component {
   }
 
   setInterval(callback, ...args) {
-    return this.__rt_intervals[this.__rt_intervals.push(GLOBAL.setInterval((...params) => {
-      callback.call(this, ...params)
-    }, ...args)) - 1]
+    return this.__rt_intervals[
+      this.__rt_intervals.push(
+        GLOBAL.setInterval((...params) => {
+          callback.call(this, ...params)
+        }, ...args)
+      ) - 1
+    ];
   }
 
   setTimeout(callback, ...args) {
-    return this.__rt_timeouts[this.__rt_timeouts.push(GLOBAL.setTimeout((...params) => {
-      callback.call(this, ...params)
-    }, ...args)) - 1]
+    return this.__rt_timeouts[
+      this.__rt_timeouts.push(
+        GLOBAL.setTimeout((...params) => {
+          callback.call(this, ...params)
+        }, ...args)
+      ) - 1
+    ];
   }
 
   render() {
